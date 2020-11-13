@@ -3,6 +3,7 @@ import loadHome from './modules/home';
 import loadMenu from './modules/menu';
 import loadContact from './modules/contact';
 
+console.log('This is a Restaurant Page!');
 
 init();
 
