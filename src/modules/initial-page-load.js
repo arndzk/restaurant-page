@@ -1,5 +1,3 @@
-const { LibManifestPlugin } = require("webpack");
-
 function createHeader(id, text) {
     const header = document.createElement('header');
     header.setAttribute('id', id);
@@ -46,7 +44,7 @@ function loadPage() {
     const header = createHeader('header', 'Restaurant');
     content.appendChild(header);
     const navBar = createNavBar('navbar');
-    content.appendChild(nav);
+    content.appendChild(navBar);
     const main = createMain('main');
     content.appendChild(main);
     const footer = createFooter('footer', 'Footer');
