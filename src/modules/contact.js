@@ -1,3 +1,5 @@
+import setBtnActive from '../utils/active-button-setter'
+
 function createSection(sectionTitle, data) {
     const section = document.createElement('section');
     section.classList.add('section');
@@ -12,14 +14,6 @@ function createSection(sectionTitle, data) {
         section.appendChild(paragraph);
     });
     return section;
-}
-function setBtnActive(id) {
-    const activeBtn = document.querySelector('.tab.active');
-    if (activeBtn) {
-        activeBtn.classList.remove('active');
-    }
-    const contactBtn = document.getElementById(id);
-    contactBtn.classList.add('active');
 }
 function loadContact() {
     const content = document.getElementById('main');

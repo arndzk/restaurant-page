@@ -1,3 +1,5 @@
+import setBtnActive from '../utils/active-button-setter'
+
 function createSection() {
     const section = document.createElement('section');
     section.classList.add('section');
@@ -10,14 +12,6 @@ function createSection() {
     paragraph.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur libero quis molestie fermentum. Vestibulum eleifend porttitor enim, non convallis nunc lobortis sed. Morbi ullamcorper nibh leo, sit amet lacinia enim dictum et. Quisque facilisis justo sit amet nisl pharetra posuere. Integer quis nulla metus. Duis eleifend dapibus tortor, in imperdiet lacus rhoncus vitae. Ut massa elit, vehicula at leo volutpat, tempus tristique ligula. Pellentesque quis eros magna. Donec ac dignissim dui. Fusce mollis urna vel fringilla feugiat. Cras dignissim eleifend arcu sed dictum. Nulla facilisi. In eu nunc ut ligula lacinia placerat quis et elit. Sed dapibus velit in nibh rutrum tincidunt eget nec magna. Maecenas ultricies augue hendrerit nisi semper, sit amet ultricies turpis aliquet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. "
     section.appendChild(paragraph);
     return section;
-}
-function setBtnActive(id) {
-    const activeBtn = document.querySelector('.tab.active');
-    if (activeBtn) {
-        activeBtn.classList.remove('active');
-    }
-    const homeBtn = document.getElementById(id);
-    homeBtn.classList.add('active');
 }
 function loadHome() {
     const content = document.getElementById('main');
