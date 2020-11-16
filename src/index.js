@@ -2,6 +2,7 @@ import loadPage from './modules/initial-page-load';
 import loadHome from './modules/home';
 import loadMenu from './modules/menu';
 import loadContact from './modules/contact';
+import './styles/style.css';
 
 console.log('This is a Restaurant Page!');
 
