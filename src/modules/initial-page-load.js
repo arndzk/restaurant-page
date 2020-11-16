@@ -31,12 +31,33 @@ function createMain(id) {
     main.setAttribute('id', id);
     return main;
 }
-function createFooter(id, text) {
+function createFooter(id) {
     const footer = document.createElement('footer');
     footer.setAttribute('id', id);
-    const h3 = document.createElement('h3');
-    h3.textContent = text;
-    footer.appendChild(h3);
+    const div = document.createElement('div');
+    div.setAttribute('id', 'footer-content');
+    const spanOne = document.createElement('span');
+    spanOne.textContent = 'Made with ';
+    const spanTwo = document.createElement('span');
+    spanTwo.setAttribute('id', 'red-heart');
+    spanTwo.innerHTML = '&#x2764';
+    const spanThree = document.createElement('span');
+    spanThree.textContent = ' & ';
+    const spanFour = document.createElement('span');
+    spanFour.setAttribute('id', 'coffee-cup');
+    spanFour.innerHTML = '&#x2615';
+    const spanFive = document.createElement('span');
+    spanFive.textContent = ' by ';
+    const anchor = document.createElement('a');
+    anchor.setAttribute('href', 'https://github.com/arndzk');
+    anchor.innerHTML = 'arndzk';
+    div.appendChild(spanOne);
+    div.appendChild(spanTwo);
+    div.appendChild(spanThree);
+    div.appendChild(spanFour);
+    div.appendChild(spanFive);
+    div.appendChild(anchor);
+    footer.appendChild(div);
     return footer;
 }
 function loadPage() {
@@ -47,7 +68,7 @@ function loadPage() {
     content.appendChild(navBar);
     const main = createMain('main');
     content.appendChild(main);
-    const footer = createFooter('footer', 'Footer');
+    const footer = createFooter('footer');
     content.appendChild(footer);
 }
 
