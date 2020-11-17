@@ -113,6 +113,32 @@ body {
 
 @media only screen and (max-width: 1080px) {
     #header {
+        font-size: 32px;
+    }
+    #logo {
+        margin: 10px 0px 10px 0px;
+    }
+    #navbar {
+        grid-column-gap: 1px;
+    }
+    .navbar-tab {
+        font-size: 28px;
+    }
+    #main {
+        min-height: 500px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    #menu-container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        min-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #header {
         font-size: 20px;
     }
     #logo {
