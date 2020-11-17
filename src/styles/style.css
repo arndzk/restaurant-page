@@ -46,6 +46,13 @@ body {
     border-bottom: 1px solid black;
 }
 
+.section-title {
+    margin: 10px;
+    font-size: 36px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
 .section {
     animation: appear .5s ease-in-out;
     display: flex;
@@ -56,11 +63,14 @@ body {
 }
 
 #menu-container {
+    animation: appear .5s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     min-width: 30%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .menu-item {
@@ -71,11 +81,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.section-title {
-    margin: 10px;
-    font-size: 36px;
 }
 
 @keyframes appear {
