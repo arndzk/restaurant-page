@@ -2,6 +2,7 @@ function createHeader(id, text) {
     const header = document.createElement('header');
     header.setAttribute('id', id);
     const logo = document.createElement('h1');
+    logo.setAttribute('id', 'logo');
     logo.textContent = text;
     header.appendChild(logo);
     return header;
