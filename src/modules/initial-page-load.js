@@ -62,7 +62,7 @@ function createFooter(id) {
 }
 function loadPage() {
     const content = document.getElementById('content');
-    const header = createHeader('header', 'Restaurant');
+    const header = createHeader('header', 'Minimalist Restaurant Page');
     content.appendChild(header);
     const navBar = createNavBar('navbar');
     content.appendChild(navBar);

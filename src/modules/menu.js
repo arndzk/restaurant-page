@@ -19,19 +19,22 @@ function loadMenu() {
     const content = document.getElementById('main');
     content.textContent = '';
     setBtnActive('menu');
+    const menu = document.createElement('div');
+    menu.setAttribute('id', 'menu-container');
     const menuItems = [
-        createMenuItem('item 1', 'price 1'),
-        createMenuItem('item 2', 'price 2'),
-        createMenuItem('item 3', 'price 3'),
-        createMenuItem('item 4', 'price 4'),
-        createMenuItem('item 5', 'price 5'),
-        createMenuItem('item 6', 'price 6'),
-        createMenuItem('item 7', 'price 7'),
-        createMenuItem('item 8', 'price 8')
+        createMenuItem('Menu Item #1', '€ 0,00'),
+        createMenuItem('Menu Item #2', '€ 0,00'),
+        createMenuItem('Menu Item #3', '€ 0,00'),
+        createMenuItem('Menu Item #4', '€ 0,00'),
+        createMenuItem('Menu Item #5', '€ 0,00'),
+        createMenuItem('Menu Item #6', '€ 0,00'),
+        createMenuItem('Menu Item #7', '€ 0,00'),
+        createMenuItem('Menu Item #8', '€ 0,00')
     ];
     menuItems.forEach((menuItem) => {
-        content.appendChild(menuItem);
+        menu.appendChild(menuItem);
     });
+    content.appendChild(menu);
 }
 
 export default loadMenu;

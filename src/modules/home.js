@@ -5,7 +5,7 @@ function createSection() {
     section.classList.add('section');
     const title = document.createElement('h2');
     title.classList.add('section-title');
-    title.textContent = "Title";
+    title.textContent = "Section Title";
     section.appendChild(title);
     const paragraph = document.createElement('p');
     paragraph.classList.add('section-paragraph');
